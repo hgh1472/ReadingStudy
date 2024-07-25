@@ -46,6 +46,7 @@ issue에 대해서는 자유롭게 해결하면 된다.
 ### issue
 다음의 Issue 양식입니다.
 ![image](https://github.com/user-attachments/assets/ca8bb9c0-ac8d-4fad-93f6-6a3d06dc2697)
-위 양식에 맞춰서 issue를 등록하면 됩니다!
+위 양식에 맞춰서 issue를 등록하면 됩니다!<br>
+Assignees는 그 주의 리더로 등록해주세요!
 
 
