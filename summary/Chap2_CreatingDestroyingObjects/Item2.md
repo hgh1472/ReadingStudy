@@ -8,37 +8,37 @@
 
 ```java
 public class NutritionFacts {
-		private final int servingSize; // 필수
-		private final int servings; // 필수
-		private final int calories; // 선택
-		private final int fat; // 선택
-		private final int sodium; // 선택
-		private final int carbohydrate; // 선택
-		
-		public NutritionFacts(int servingSize, int servings) {
-				this(servingSize, servings, 0);
-		}
-		
-		public NutritionFacts(int servingSize, int servings, int calories) {
-				this(servingSize, servings, calories, 0);
-		}
-		
-		public NutritionFacts(int servingSize, int servings, int calories, int fat) {
-				this(servingSize, servings, calories, fat, 0);
-		}
-		
-		public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium) {
-				this(servingSize, servings, calories, fat, sodium, 0);
-		}
-		
-		public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium, int carbohydarte) {
-				this.servingSize = servingSize;
-				this.servings = servings;
-				this.calories = calories;
-				this.fat = fat;
-				this.sodium = sodium;
-				this.carbohydrate = carbohydrate;
-		}
+    private final int servingSize; // 필수
+    private final int servings; // 필수
+    private final int calories; // 선택
+    private final int fat; // 선택
+    private final int sodium; // 선택
+    private final int carbohydrate; // 선택
+    
+    public NutritionFacts(int servingSize, int servings) {
+        this(servingSize, servings, 0);
+    }
+    
+    public NutritionFacts(int servingSize, int servings, int calories) {
+        this(servingSize, servings, calories, 0);
+    }
+    
+    public NutritionFacts(int servingSize, int servings, int calories, int fat) {
+        this(servingSize, servings, calories, fat, 0);
+    }
+    
+    public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium) {
+        this(servingSize, servings, calories, fat, sodium, 0);
+    }
+    
+    public NutritionFacts(int servingSize, int servings, int calories, int fat, int sodium, int carbohydarte) {
+        this.servingSize = servingSize;
+        this.servings = servings;
+        this.calories = calories;
+        this.fat = fat;
+        this.sodium = sodium;
+        this.carbohydrate = carbohydrate;
+    }
 }
 ```
 
@@ -50,21 +50,21 @@ public class NutritionFacts {
 
 ```java
 public class NutritionFacts {
-		// 매개변수들은 기본값으로 초기화
-		private int servingSize = -1;
-		private int servings = -1;
-		private int calories = 0;
-		private int fat = 0;
-		private int sodium = 0;
-		private int carbohydrate = 0;
-		
-		public NutritionFacts() {}
-		public void setServingSize(int val) { servingSize = val; }
-		public void setServings(int val) { servings = val; }
-		public void setCalories(int val) { calories = val; }
-		public void setFat(int val) { fat = val; }
-		public void setSodium(int val) { sodium = val; }
-		public void setCarbohydrate(int val) { carbohydrate = val; }
+    // 매개변수들은 기본값으로 초기화
+    private int servingSize = -1;
+    private int servings = -1;
+    private int calories = 0;
+    private int fat = 0;
+    private int sodium = 0;
+    private int carbohydrate = 0;
+    
+    public NutritionFacts() {}
+    public void setServingSize(int val) { servingSize = val; }
+    public void setServings(int val) { servings = val; }
+    public void setCalories(int val) { calories = val; }
+    public void setFat(int val) { fat = val; }
+    public void setSodium(int val) { sodium = val; }
+    public void setCarbohydrate(int val) { carbohydrate = val; }
 }
 
 /**
@@ -97,7 +97,7 @@ public class NutritionFacts {
         // 선택 매개변수 : 기본값으로 초기화
         private int calories = 0;
         private int fat = 0;
-        private sodium = 0;
+        private int sodium = 0;
         private int carbohydrate = 0;
         
         public Builder(int servingSize, int servings) {
